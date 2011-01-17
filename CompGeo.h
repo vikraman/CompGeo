@@ -7,6 +7,8 @@
 #ifndef __COMPGEO_H__
 #define __COMPGEO_H__
 
+#include <stddef.h>
+
 typedef struct _Point2D {
   double x;
   double y;
