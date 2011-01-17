@@ -12,6 +12,11 @@ typedef struct _Point2D {
   double y;
 } Point2D;
 
+typedef struct _Point2DList {
+  Point2D * p;
+  size_t nPoints;
+} Point2DList;
+
 typedef struct _Line2D {
   Point2D p1;
   Point2D p2;
