@@ -7,17 +7,16 @@
 #ifndef __SEGMENTINTERSECTION_H__
 #define __SEGMENTINTERSECTION_H__
 
-#include <stddef.h>
+#include <vector>
 #include "CompGeo.h"
 
 /* API */
-void initSegmentIntersection ();
-void addSegment (const Line2D *);
-void findIntersection (Point2DList *);
-void killSegmentIntersection ();
+void initSegmentIntersection (void);
+void addSegment (const Line2D &);
+void findIntersection (std::vector <Point2D> &);
+void killSegmentIntersection (void);
 
-static Line2D * line;
-static size_t nLines;
+static std::vector <Line2D> lines;
 
 #endif
 /* SegmentIntersection.h */

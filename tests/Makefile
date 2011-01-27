@@ -1,6 +1,6 @@
-CC=gcc
-CFLAGS=-std=gnu99 -Wall -Wextra -O0 -g -pipe -I.. -I../SegmentIntersection
+CC=g++
+CXXFLAGS=-Wall -Wextra -O0 -g -pipe -I.. -I../SegmentIntersection
 
 all: testSegmentIntersection
 
-testSegmentIntersection: ../SegmentIntersection/SegmentIntersection.c testSegmentIntersection.c
+testSegmentIntersection: ../SegmentIntersection/Intersection.o ../SegmentIntersection/SegmentIntersection.o testSegmentIntersection.cpp
